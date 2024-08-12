@@ -20,17 +20,17 @@ header {
 
 .header-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0 20px;
 }
 
 .profile-container {
-    width: 120px;
-    height: 120px;
+    width: 150px; /* Profil fotoğrafını büyütme */
+    height: 150px;
     overflow: hidden;
     border-radius: 50%;
-    margin-bottom: 20px; /* Profil resmi alt kısma yerleşmesi için */
+    margin-right: 20px; /* Metin ile araya boşluk */
     display: flex;
     align-items: flex-end; /* Resmi altta göstermek için */
     justify-content: center;
@@ -41,6 +41,11 @@ header {
     height: auto;
     object-fit: cover;
     object-position: center; /* Resmin ortasında kalmasını sağlar */
+}
+
+.header-text {
+    max-width: 600px; /* Metnin genişliğini sınırlama */
+    text-align: left;
 }
 
 .header-text h1 {
@@ -55,10 +60,15 @@ header {
     font-weight: 300;
 }
 
+nav.main-nav {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* Navbar arka planı mor gradient */
+    padding: 10px 0;
+}
+
 nav.main-nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 0;
     display: flex;
     gap: 20px;
     justify-content: center;

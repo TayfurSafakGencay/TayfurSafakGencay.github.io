@@ -29,17 +29,17 @@
 <section id="projects" class="container">
     <h2>Projects</h2>
     <div class="projects-grid">
-        <div class="project">
+        <div class="project" onclick="openModal('modal1')">
+            <img src="resim1.jpg" alt="Project 1">
             <h3>Project 1</h3>
-            <p>Short description of the project, tools used, and the outcome.</p>
         </div>
-        <div class="project">
+        <div class="project" onclick="openModal('modal2')">
+            <img src="resim2.jpg" alt="Project 2">
             <h3>Project 2</h3>
-            <p>Short description of the project, tools used, and the outcome.</p>
         </div>
-        <div class="project">
+        <div class="project" onclick="openModal('modal3')">
+            <img src="resim3.jpg" alt="Project 3">
             <h3>Project 3</h3>
-            <p>Short description of the project, tools used, and the outcome.</p>
         </div>
     </div>
 </section>
@@ -54,5 +54,32 @@
         <p>&copy; 2024 Your Name. All Rights Reserved.</p>
     </div>
 </footer>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Project 1</h2>
+        <p>Detailed information about Project 1 goes here.</p>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Project 2</h2>
+        <p>Detailed information about Project 2 goes here.</p>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Project 3</h2>
+        <p>Detailed information about Project 3 goes here.</p>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
 </body>
 </html>

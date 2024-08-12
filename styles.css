@@ -26,8 +26,8 @@ header {
 }
 
 .profile-container {
-    width: 150px; /* Profil fotoğrafını büyütme */
-    height: 150px;
+    width: 500px; /* Profil fotoğrafını büyütme */
+    height: 500px;
     overflow: hidden;
     border-radius: 50%;
     margin-right: 20px; /* Metin ile araya boşluk */

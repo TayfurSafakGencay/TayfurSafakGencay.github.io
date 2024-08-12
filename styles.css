@@ -12,7 +12,7 @@
 }
 
 header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* Eski gradient renkler */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -20,9 +20,9 @@ header {
 
 .header-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+    padding: 0 20px;
 }
 
 .profile-container {
@@ -30,20 +30,23 @@ header {
     height: 120px;
     overflow: hidden;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-bottom: 20px; /* Profil resmi alt kısma yerleşmesi için */
+    display: flex;
+    align-items: flex-end; /* Resmi altta göstermek için */
+    justify-content: center;
 }
 
 .profile-pic {
     width: 100%;
     height: auto;
     object-fit: cover;
-    object-position: center; /* Belirli bir kısmı göstermesi için */
+    object-position: center; /* Resmin ortasında kalmasını sağlar */
 }
 
 .header-text h1 {
     margin: 0;
     font-size: 2.5em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .header-text p {
@@ -52,44 +55,41 @@ header {
     font-weight: 300;
 }
 
-.main-nav {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px 0;
-}
-
-.main-nav ul {
+nav.main-nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0;
     display: flex;
+    gap: 20px;
     justify-content: center;
 }
 
-.main-nav ul li {
-    margin: 0 15px;
-}
-
-.main-nav ul li a {
+nav.main-nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.1em;
     font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.main-nav ul li .btn {
+nav.main-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav.main-nav ul li a.btn {
     background-color: #fff;
-    color: #6a11cb;
-    padding: 8px 16px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s, color 0.3s;
+    color: #6a1b9a;
+    border: 1px solid #fff;
 }
 
-.main-nav ul li .btn:hover {
-    background-color: #6a11cb;
-    color: #fff;
+nav.main-nav ul li a.btn:hover {
+    background-color: #d1c4e9;
+    color: #6a1b9a;
 }
 
+/* Section Styles */
 section {
     padding: 20px 0;
 }
@@ -97,13 +97,12 @@ section {
 h2 {
     color: #333;
     font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
+/* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -114,12 +113,11 @@ h2 {
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s;
 }
 
 .project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 .project img {

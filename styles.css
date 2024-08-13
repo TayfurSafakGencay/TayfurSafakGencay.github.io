@@ -1,211 +1,223 @@
-﻿body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
+﻿/* Genel Stiller */
+body {
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    color: black;
 }
 
-.container {
-    width: 80%;
+h1,h2,h3,span{
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.normalText {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: 200;
+}
+
+.smallTitle {
+    font-family: "Roboto", sans-serif;
+    color: gray;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-header {
-    background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* Mor gradient arka plan */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+/* Navbar Stilleri */
+.navbar {
+    padding: 0.75rem 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1020;
 }
 
-.header-content {
+/* Navbar içerikleri */
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    font-weight: 700; /* Bold yapıldı */
+    color: #6a1b9a;
+    margin-left: -20px; /* GameIcon ve yazıyı sola kaydırmak için */
+}
+
+.navbar-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/* Navbar Nav */
+.navbar-nav-new {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: hotpink; /* Hover durumda mavi renge dönüştür */
+}
+
+/* **** Sections **** */
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* veya uygun bir yükseklik */
+    background-image: url('Images/Background/home-banner.png'); /* Banner resminizin yolu */
+    background-size: cover; /* Resmin tam olarak arka plana kaplamasını sağlar */
+    background-position: right; /* Resmi sağa dayalı yerleştirir */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    color: #fff; /* Metin rengini beyaz yapar, gerektiği şekilde değiştirebilirsiniz */
+    display: flex;
+    align-items: center; /* Yüksekliği ortalamak için */
+    justify-content: center; /* İçeriği ortalamak için */
 }
 
 .profile-container {
-    width: 150px; /* Profil fotoğrafını büyütme */
-    height: 150px;
+    width: 250px;
+    height: 300px;
     overflow: hidden;
-    border-radius: 50%;
-    margin-right: 20px; /* Metin ile araya boşluk */
-    display: flex;
-    align-items: flex-end; /* Resmi altta göstermek için */
-    justify-content: center;
+    border-radius: 50%; /* Tam yuvarlak yapar */
+    position: absolute; /* Sayfanın belirli bir yerine sabitler */
+    top: 15%; /* Üstten mesafe */
+    right: 25%; /* Sağdan mesafe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Hafif gölge */
 }
 
-.profile-pic {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center; /* Resmin ortasında kalmasını sağlar */
-}
-
-.header-text {
-    max-width: 600px; /* Metnin genişliğini sınırlama */
-    text-align: left;
-}
-
-.header-text h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: 700;
-}
-
-.header-text p {
-    margin: 5px 0 0;
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
-/* İlk Navbar */
-nav.main-nav {
-    background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* Navbar arka planı mor gradient */
-    padding: 10px 0;
-}
-
-nav.main-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Sabit Navbar */
-nav.fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* Mor gradient arka plan */
-    padding: 10px 0;
-    z-index: 1000; /* Diğer içeriklerin üstünde olması için */
-}
-
-nav.fixed-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-nav.fixed-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-nav.fixed-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-nav.fixed-nav ul li a.btn {
-    background-color: #fff;
-    color: #6a1b9a;
-    border: 1px solid #fff;
-}
-
-nav.fixed-nav ul li a.btn:hover {
-    background-color: #d1c4e9;
-    color: #6a1b9a;
-}
-
-/* Sticky Title */
-.sticky-header {
-    position: sticky;
-    top: 60px; /* Navbar'ın yüksekliğine bağlı olarak ayarlayın */
-    background: #fff; /* Beyaz arka plan rengi */
-    padding: 10px 0;
-    z-index: 500; /* Navbar'ın altında kalmaması için */
-    border-bottom: 1px solid #ddd; /* Altında ince bir çizgi */
-}
-
-section {
-    padding: 20px 0;
-    margin-top: 60px; /* Sabit navbar nedeniyle içerik ile arasında boşluk bırak */
-}
-
-h2 {
-    color: #333;
-    font-size: 2em;
-}
-
-/* Projects Grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.project:hover {
-    transform: scale(1.05);
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-/* Modal Styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
+.profile-container img {
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
+    object-fit: cover; /* Resmi kapsayıcıya sığdırır */
+    object-position: bottom; /* Resmi aşağı kaydırır */
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+@media (max-width: 1200px) {
+    .profile-container {
+        display: none; /* Fotoğrafı gizler */
+    }
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Dışarı taşan içeriği gizler */
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
+.background-container {
+    position: relative;
+    height: 100vh; /* Tüm görünüm yüksekliğini kaplar */
+    width: 100%; /* Tüm genişliği kaplar */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi kapsayıcıya uyacak şekilde keser */
+    z-index: -1; /* Resmi diğer içeriğin arkasına yerleştirir */
+}
+
+.content {
+    position: relative; /* Diğer içeriğin konumunu belirler */
+    z-index: 1; /* İçeriği arka planın önüne getirir */
+    color: white; /* İçeriğin görünürlüğü için */
+    padding: 20px; /* İçeriğe boşluk ekler */
+    text-align: left; /* İçeriği ortalar */
+}
+
+.primary_btn {
+    display: inline-block;
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    color: white;
+    letter-spacing: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 38px;
+    outline: none !important;
+    text-align: center;
     cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-size: 200% auto;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
+}
+
+.primary_btn:hover {
+    background-position: right center;
+    color: #fff
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%
+}
+
+.icon-link {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 1;
+    transition: all 0.3s ease;
+    background: rgba(128, 128, 128, 0.75);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 1rem;
+}
+
+.icon-link:hover {
+    background: linear-gradient(45deg, #1345e6 0%, #ed239f 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -4,6 +4,13 @@ body {
     margin: 0;
     padding: 0;
     color: black;
+    height: 2000px;
+    overflow: scroll;
+}
+
+html {
+    height: 110%;
+    margin-bottom: 0.01em;
 }
 
 h1,h2,h3,span{
@@ -24,6 +31,12 @@ h1,h2,h3,span{
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+.section{
+    position: relative; /* Konumlamayı sağlamak için */
+    overflow: auto;
+    padding-top: 200px; /* Navbar yüksekliğine göre ayarlayın */
 }
 
 /* Main Container */
@@ -115,13 +128,13 @@ h1,h2,h3,span{
 }
 
 .profile-container {
-    width: 250px;
-    height: 300px;
+    width: 360px;
+    height: 400px;
     overflow: hidden;
     border-radius: 50%; /* Tam yuvarlak yapar */
     position: absolute; /* Sayfanın belirli bir yerine sabitler */
-    top: 15%; /* Üstten mesafe */
-    right: 25%; /* Sağdan mesafe */
+    top: 30%; /* Üstten mesafe */
+    right: 10%; /* Sağdan mesafe */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Hafif gölge */
 }
 
@@ -136,13 +149,6 @@ h1,h2,h3,span{
     .profile-container {
         display: none; /* Fotoğrafı gizler */
     }
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; /* Dışarı taşan içeriği gizler */
 }
 
 .background-container {
@@ -167,6 +173,7 @@ html, body {
     color: white; /* İçeriğin görünürlüğü için */
     padding: 20px; /* İçeriğe boşluk ekler */
     text-align: left; /* İçeriği ortalar */
+    overflow: auto;
 }
 
 .primary_btn {
@@ -217,7 +224,170 @@ html, body {
 }
 
 .icon-link:hover {
-    background: linear-gradient(45deg, #1345e6 0%, #ed239f 75%);
+    background: linear-gradient(45deg, rgb(19, 69, 230) 0%, rgb(237, 35, 159) 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* ----------------- Experience -------------- */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Kartlar baştan itibaren sıralanır */
+    gap: 40px; /* Kartlar arasındaki boşluk */
+    margin-left: 5px;
+    height: auto;
+    overflow-y: hidden;
+}
+
+.card {
+    width: 22%; /* 4 kartın yan yana sığması için yaklaşık yüzde 23 genişlik */
+    height: 500px;
+    min-width: 260px; /* Kartın minimum genişliği */
+    min-height: 500px; /* Kartın minimum yüksekliği */
+    flex-shrink: 0; /* Kartların küçülmesini engeller */
+    
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:
+            rgba(160, 0, 255, 0.4)  5px 5px,
+            rgba(160, 0, 255, 0.3) 10px 10px,
+            rgba(160, 0, 255, 0.2) 15px 15px,
+            rgba(160, 0, 255, 0.1) 20px 20px,
+            rgba(160, 0, 255, 0.05)25px 25px;
+    overflow: visible;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; /* Kart içindeki elemanlar dikey olarak hizalanır */
+    justify-content: space-between; /* Kart içindeki elemanlar arasında boşluk bırakır */
+    position: relative; /* Overlay'in konumlandırılabilmesi için gerekli */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+:root{
+    --overlay-color: rgba(160, 0, 255, 0.8);
+/*var(--overlay-color, rgba(160, 0, 255, 0.8));*/
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0; /* Başlangıçta kartın dışında */
+    left: 0; /* Başlangıçta kartın dışında */
+    width: 100%; /* Kartın genişliği */
+    height: 100%; /* Kartın yüksekliği */
+    background: rgba(160, 0, 255, 0.8); /* Mor renk ve transparanlık */
+    z-index: 2; /* Overlay’in içerikten arkada kalmasını sağlar */
+    opacity: 0;
+    transition: top 0.75s ease, left 0.75s ease, opacity 0.75s ease; /* Pozisyon ve opaklık için geçiş */
+    backdrop-filter: blur(3px); /* Gölgeleme efekti */
+    border-radius: 10px;
+}
+
+.card:hover::after {
+    top: 20px; /* Hover durumunda pozisyon */
+    left: 20px; /* Hover durumunda pozisyon */
+    opacity: 1; /* Hover durumunda görünür */
+}
+
+.overlay-card-container {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 3; /* Yazının overlay'in üstünde görünmesini sağlar */
+    padding: 10px;
+    width: 100%; /* Yazının genişliği */
+    height: 500px;
+    opacity: 0;
+    transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.overlay-card-container ul {
+    list-style-position: inside; /* Madde işaretlerini metne daha yakın hale getirir */
+    padding-left: 0; /* Varsayılan padding'i kaldırır */
+}
+
+.overlay-card-container li {
+    margin-bottom: 10px; /* Madde işaretleri arasına boşluk ekler */
+}
+
+.overlay-card-text-list-element{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-left: -20px;
+}
+
+.overlay-card-text{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.card:hover .overlay-card-container {
+    opacity: 1; /* Hover durumunda görünür */
+    transform: translate(20px, 20px); /* Hover durumunda ortalanmış olarak */
+}
+
+.card-content {
+    padding: 20px;
+    position: relative; /* İçeriğin overlay’in üstünde görünmesini sağlar */
+    z-index: 2; /* İçeriğin overlay’in üstünde görünmesini sağlar */
+}
+
+.card-name {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.card-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+.image-container {
+    flex-grow: 1; /* Görüntü konteynerinin esnemesine izin verir */
+    display: flex;
+    align-items: flex-end; /* Resmi alt kısma hizalar */
+    justify-content: center; /* Resmi yatayda ortalar */
+}
+
+.card-img {
+    display: block;
+    margin: 0 auto; /* Yatayda ortalama */
+    object-fit: contain; /* Resmi kapsayıcıya sığdırır ve en-boy oranını korur */
+    align-self: flex-end; /* Resmi alt kısma hizalar */
+    max-height: 100%; /* Kart içindeki alanı aşmaması için maksimum yükseklik */
+    max-width: 100%; /* Kart genişliğini aşmaması için maksimum genişlik */
+}
+
+ .clickable-text {
+     cursor: pointer;
+ }
+
+.clickable-text:hover {
+    color: yellow; /* Hover durumunda renk değişimi */
+}
+
+
+footer {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }

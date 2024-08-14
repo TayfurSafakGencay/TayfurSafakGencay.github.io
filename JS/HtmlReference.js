@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // İçerik dosyalarının yollarını tanımlayın
     const sections = {
         'about': '../HTML/Section/About.html',
-        // 'services': 'services.html',
-        // 'portfolio': 'portfolio.html',
-        // 'contact': 'contact.html'
+        'experience': '../HTML/Section/Experience.html',
+        'projects': '../HTML/Section/Projects.html',
+        'contact': '../HTML/Section/Contact.html'
     };
 
     // Her section için içerik yükleme işlemi

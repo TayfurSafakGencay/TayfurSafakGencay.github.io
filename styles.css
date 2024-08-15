@@ -221,6 +221,7 @@ h1,h2,h3,span{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .icon-link:hover {
@@ -382,7 +383,6 @@ h1,h2,h3,span{
     color: yellow; /* Hover durumunda renk değişimi */
 }
 
-
 footer {
     font-family: "Roboto", sans-serif;
     color: black;
@@ -391,3 +391,175 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
+/* ************* Projects *************** */
+
+.project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Kartlar baştan itibaren sıralanır */
+    gap: 40px; /* Kartlar arasındaki boşluk */
+    margin-left: 5px;
+    height: auto;
+    overflow-y: hidden;
+}
+
+.project-card {
+    width: 22%; /* 4 kartın yan yana sığması için yaklaşık yüzde 23 genişlik */
+    height: 22%;
+    /*min-width: 260px; !* Kartın minimum genişliği *!*/
+    /*min-height: 500px; !* Kartın minimum yüksekliği *!*/
+    flex-shrink: 0; /* Kartların küçülmesini engeller */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:
+            rgba(162, 4, 49, 0.4)  5px 5px,
+            rgba(162, 4, 49, 0.3) 10px 10px,
+            rgba(162, 4, 49, 0.2) 15px 15px,
+            rgba(162, 4, 49, 0.1) 20px 20px,
+            rgba(162, 4, 49, 0.05)25px 25px;
+    overflow: visible;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; /* Kart içindeki elemanlar dikey olarak hizalanır */
+    justify-content: space-between; /* Kart içindeki elemanlar arasında boşluk bırakır */
+    position: relative; /* Overlay'in konumlandırılabilmesi için gerekli */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project-image{
+    border-radius: 10px;
+}
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    top: 0; /* Başlangıçta kartın dışında */
+    left: 0; /* Başlangıçta kartın dışında */
+    width: 100%; /* Kartın genişliği */
+    height: 100%; /* Kartın yüksekliği */
+    background: rgba(162, 4, 49, 0.9); 
+    z-index: 2; /* Overlay’in içerikten arkada kalmasını sağlar */
+    opacity: 0;
+    transition: top 0.75s ease, left 0.75s ease, opacity 0.75s ease; /* Pozisyon ve opaklık için geçiş */
+    /*backdrop-filter: blur(3px); !* Gölgeleme efekti *!*/
+    border-radius: 10px;
+}
+
+.project-card:hover::after {
+    top: 20px; /* Hover durumunda pozisyon */
+    left: 20px; /* Hover durumunda pozisyon */
+    opacity: 1; /* Hover durumunda görünür */
+}
+
+.overlay-project-card-container {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 3; /* Yazının overlay'in üstünde görünmesini sağlar */
+    padding: 10px;
+    width: 100%; /* Yazının genişliği */
+    height: 500px;
+    opacity: 0;
+    transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.project-card:hover .overlay-project-card-container {
+    opacity: 1; /* Hover durumunda görünür */
+    transform: translate(20px, 20px); /* Hover durumunda ortalanmış olarak */
+}
+
+.overlay-project-card-text{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    height: 100%; /* Ensures the text container takes up the full height */
+    text-align: center;
+}
+
+/* *********** Modal ************ */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+/*rgba(255, 255, 255, 0.7)*/
+    background-color: rgba(201, 201, 201, 0.75);
+    padding: 20px;
+    border: 1px solid #888;
+    height: 75%;
+    width: 75%;
+    max-width: 1100px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Hafif gölge */
+    /*margin: auto;*/
+    box-sizing: border-box;
+    /*display: flex; !* Flexbox kullanarak yan yana dizilim sağlandı *!*/
+    align-items: center; /* Öğeleri dikey olarak ortala */
+
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Kartlar baştan itibaren sıralanır */
+    overflow-y: hidden;
+    flex-direction: row;
+    backdrop-filter: blur(8px); /* Gölgeleme efekti */
+}
+
+.modal-icon-link {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 1;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.modal-icon-link:hover {
+    background: linear-gradient(45deg, rgb(19, 69, 230) 0%, rgb(237, 35, 159) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.video-container {
+    justify-content: center; /* Centers horizontally */
+    align-content: center;
+    vertical-align: center;  
+    width: 100%;
+    height: 100%;
+}
+
+.horizontal-div {
+    width: 50%;
+    height: 100%;
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column; /* Bu, içerikleri dikeyde hizalar */
+    justify-content: space-between;
+    align-items: center; /* Bu, içerikleri yatayda ortalar */
+    margin-left: 15px; /* Varsayılan margin */
+    height: 100%;
+}
+

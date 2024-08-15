@@ -1,5 +1,38 @@
-﻿<<link rel="stylesheet" href="../../styles.css">
-<body>
-<p class="smallTitle">Projects</p>
+﻿<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <<link rel="stylesheet" href="../../styles.css">
+    <title>Document</title>
+    <script>document.addEventListener("DOMContentLoaded", function() {LoadModals();});</script>
+</head>
+
+<body>
+<div style="display: flex; align-items: center">
+    <p class="smallTitle">Projects</p>
+<!--    <a href=#><i class="ti-info-alt icon-link" style="font-size: 18px; position: relative; top: -5px; left: 3px; color: black"></i></a>-->
+</div>
+
+<div class="project-card-container">
+    <div class="project-card" onclick="openModal('TileBustersCloneModal')">
+        <img src="../../Images/Games/TileBustersClone.png" alt="TileBusters" class="project-image">
+        <div class="overlay-project-card-container">
+            <p class="overlay-project-card-text">Tile Busters (Clone)</p>
+        </div>
+    </div>
+    <div class="project-card" onclick="openModal('RoyalMatchCloneModal')">
+        <img src="../../Images/Games/RoyalMatchClone.png" alt="RoyalMatch" class="project-image">
+        <div class="overlay-project-card-container">
+            <p class="overlay-project-card-text">Royal Match (Clone)</p>
+        </div>
+    </div>
+</div>
+
+<div id='TileBustersCloneModal' class="modal"></div>
+<div id='RoyalMatchCloneModal' class="modal"></div>
+
+<script src="../../JS/ProjectModalReference.js"></script>
 </body>
+</html>

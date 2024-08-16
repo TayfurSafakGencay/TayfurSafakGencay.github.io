@@ -521,6 +521,7 @@ footer {
     overflow-y: hidden;
     flex-direction: row;
     backdrop-filter: blur(8px); /* Gölgeleme efekti */
+    z-index: 10;
 }
 
 .modal-icon-link {
@@ -563,3 +564,11 @@ footer {
     height: 100%;
 }
 
+.fullscreen-div {
+    position: fixed; /* Ekranın her yerinde sabit kalması için */
+    top: 0; /* Üstten sıfır uzaklık */
+    left: 0; /* Soldan sıfır uzaklık */
+    width: 100vw; /* Genişlik %100 ekran genişliği */
+    height: 100vh; /* Yükseklik %100 ekran yüksekliği */
+    z-index: 5; /* Diğer elemanların üstünde olması için */
+}

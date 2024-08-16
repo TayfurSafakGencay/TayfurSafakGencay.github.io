@@ -1,0 +1,42 @@
+﻿<link rel="stylesheet" href="../../styles.css">
+
+<body>
+
+<div class="fullscreen-div" onclick="closeModal('ParkingOrderCloneModal'); StopVideo()"></div>
+
+<div class="modal-content">
+  <div class="horizontal-div" style="width: 32%">
+    <iframe id="video" width="360" height="1080" src="https://www.youtube.com/embed/WQJfEn1-JRo?si=cfBH7Nta0wjg2rFq"
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write;encrypted-media; gyroscope;
+             picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+            class="video-container" style="width: 100%; height: 100%">
+    </iframe>
+  </div>
+  <div class="horizontal-div" style="width: 67%">
+    <a onclick="closeModal('ParkingOrderCloneModal'); StopVideo()"><i class="ti-close modal-icon-link"
+                                                                   style="font-size: 18px; top: 3%; right: 1%; color: red; position: absolute"></i></a>
+
+    <div class="centered-container">
+      <h2>Parking Order (Clone)</h2>
+      <p class="normalText" style="font-size: 18px">A project I developed with the intention of learning and experimenting with new concepts and techniques.<br><br>
+        Technologies and Features Expertise:<br><br>
+        &emsp;&bull;&nbsp; Singleton <br>
+        &emsp;&bull;&nbsp; Splines <br>
+        &emsp;&bull;&nbsp; Chest Opening Animations <br>
+        &emsp;&bull;&nbsp; 3D Objects in UI <br>
+        &emsp;&bull;&nbsp; Advanced Dotween Animations <br>
+        &emsp;&bull;&nbsp; Cinemachine <br>
+        &emsp;&bull;&nbsp; Animated Shop <br>
+      </p>
+      <div style="display: flex; align-items: center; bottom: 5%">
+        <a href="https://github.com/TayfurSafakGencay/ParkingOrder"><i class="ti-github modal-icon-link"></i></a>
+        <a href="https://www.youtube.com/watch?v=WQJfEn1-JRo&t=28s"><i class="ti-youtube modal-icon-link"></i></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="../../JS/ProjectModalReference.js"></script>
+<script src="../../JS/StopYoutubeVideo.js"></script>
+</body>

@@ -1,26 +1,4 @@
-﻿function LoadModals(){
-    document.addEventListener("DOMContentLoaded", function() {
-        const contentFiles = {
-            'TileBustersCloneModal': '../HTML/Modal/TileBustersCloneModal.html',
-            'RoyalMatchCloneModal': '../HTML/Modal/RoyalMatchCloneModal.html',
-        };
-        Object.keys(contentFiles).forEach(id => {
-            const contentDiv = document.getElementById(id);
-            if (contentDiv)
-            {
-                fetch(contentFiles[id]).then(response => response.text()).then(data =>
-                {
-                    contentDiv.innerHTML = data;
-                }).catch(error => console.error('Error loading content:', error));
-            } else
-            {
-                console.error(`No element found with id: ${id}`);
-            }
-        });
-    });
-}
-
-function openModal(modalId)
+﻿function openModal(modalId)
 {
     const contentFile = '../HTML/Modal/' + modalId + '.html';
     

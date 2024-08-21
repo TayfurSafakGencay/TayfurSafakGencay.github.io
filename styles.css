@@ -53,9 +53,10 @@ h1,h2,h3,span{
     padding: 0.75rem 0;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1020;
+    z-index: 1050; /* Z-index artırıldı */
+    width: 100%;
 }
 
 /* Navbar içerikleri */
@@ -80,7 +81,6 @@ h1,h2,h3,span{
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
-    /*margin-right: 10px;*/
     margin-top: 5px;
 }
 
@@ -135,6 +135,7 @@ h1,h2,h3,span{
         background-color: white;
         padding: 10px 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+        z-index: 1050; /* Mobilde navbarın görünürlüğü için z-index artırıldı */
     }
 
     .navbar-nav-new.show {

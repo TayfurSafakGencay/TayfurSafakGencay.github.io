@@ -279,6 +279,18 @@ h1,h2,h3,span{
     overflow-y: hidden;
 }
 
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center; /* Center align the cards */
+    }
+
+    .card-container > * {
+        width: 100%; /* Ensure each card takes up the full width */
+        max-width: 100%; /* Prevent any max-width limits */
+    }
+}
+
 .card {
     width: 22%; /* 4 kartın yan yana sığması için yaklaşık yüzde 23 genişlik */
     height: 500px;

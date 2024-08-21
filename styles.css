@@ -622,6 +622,7 @@ footer {
     flex-wrap: wrap;
     justify-content: flex-start; /* Kartlar baştan itibaren sıralanır */
     overflow-y: auto;
+    overflow-x: hidden;
     flex-direction: row;
     backdrop-filter: blur(8px); /* Gölgeleme efekti */
     z-index: 1000;
@@ -630,6 +631,10 @@ footer {
 @media (max-width: 1099px) {
     .modal-content {
         max-width: 100%; /* Ekran genişliği 768px'den büyük olduğunda max 1100px genişlik */
+        background-color: rgba(201, 201, 201, 0.9);
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden; /* Yatay kaydırmayı engelle */
     }
 }
 

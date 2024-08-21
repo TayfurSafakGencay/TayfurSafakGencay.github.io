@@ -1,12 +1,6 @@
 ﻿let currentSlide = 0;
 
 const images = [
-    "Images/GameContents/Polity/PolityFarming.jpg",
-    "Images/GameContents/Polity/PolityJobs.jpg",
-    "Images/GameContents/Polity/PolityDisco.jpg",
-    "Images/GameContents/Polity/ClothGif.gif",
-    "Images/GameContents/Polity/PolityBuildCity.webp",
-    "Images/GameContents/Polity/PolityChooseYourPath.webp"
 ];
 
 function showSlide(index) {

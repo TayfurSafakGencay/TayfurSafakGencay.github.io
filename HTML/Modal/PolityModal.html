@@ -1,0 +1,78 @@
+﻿<link rel="stylesheet" href="../../styles.css">
+
+<body>
+
+<div class="fullscreen-div" onclick="closeModal('PolityModal'); StopVideo()"></div>
+
+<div class="modal-content" style="height: 85%; width: 100%; margin-top: 5%;">
+    <div class="centered-container" style="margin-left: 0; width: 100%">
+        <h2 style="text-align: center">Polity</h2>
+        
+        <a onclick="closeModal('PolityModal'); StopVideo()"><i class="ti-close modal-icon-link"
+                                                               style="font-size: 18px; top: 3%; right: 1%; color: red; position: absolute"></i></a>
+
+        <div style="position: relative; top: 25px">
+            <p class="normalText" style="font-size: 18px; text-align: justify">Polity is a strategic simulation game that revolves around political management and governance.
+                Set in a dynamically evolving world, players take on the role of a leader tasked with shaping the future of their nation.
+                The game offers a deep and complex political system where decisions on 
+                policies, diplomacy, economics, and military strategy significantly impact the game's outcome.<br><br>
+
+                Players must navigate through a variety of challenges, such as managing internal conflicts,
+                forging alliances, and addressing economic crises. The game is designed to test strategic thinking and
+                decision-making skills, providing a rich and immersive experience in political simulation.<br><br>
+
+                &emsp;&bull;&nbsp;&nbsp;&nbsp;Dynamic Political System: Engage with a complex network of political interactions and consequences. <br>
+                &emsp;&bull;&nbsp;&nbsp;&nbsp;Strategic Decision-Making: Make critical choices that affect your nation's development and stability. <br>
+                &emsp;&bull;&nbsp;&nbsp;&nbsp;Economic Management: Balance budgets, manage resources, and drive economic growth. <br>
+                &emsp;&bull;&nbsp;&nbsp;&nbsp;Diplomacy and Alliances: Form alliances, negotiate treaties, and influence global politics. <br>
+                &emsp;&bull;&nbsp;&nbsp;&nbsp;Military Strategy: Plan and execute military operations to defend your nation or expand its influence. <br>
+            </p>
+        </div>
+        
+        <div class="icon-container" style="margin-top: 25px">
+            <a href="https://apps.apple.com/us/app/polity-online-role-playing/id1623977845?l=en" target="_blank">
+                <img src="../../Images/Icons/app-store.png" alt="app-store" class="png-icons">
+            </a>
+            <a href="https://store.steampowered.com/app/1479480/Polity__Online_Role_Playing/" target="_blank">
+                <img src="../../Images/Icons/steam.png" alt="steam" class="png-icons" style="height: 45px;width: 45px">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.jib.polity" target="_blank">
+                <img src="../../Images/Icons/play-store.png" alt="play-store" class="png-icons">
+            </a>
+        </div>
+        
+        <div class="slider-container">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <img id="slider-image" src="../../Images/GameContents/Polity/PolityFarming.jpg" alt="Image Slider" class="slider-image">
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+
+    </div>
+
+    <!--    <div class="horizontal-div">-->
+
+    <!--    </div>-->
+    <!--    <div class="horizontal-div" style="width: 67%">-->
+
+
+    <!--        <div class="centered-container">-->
+    <!--            <h2>Ball Blast (Clone)</h2>-->
+    <!--            <p class="normalText" style="font-size: 18px">In under a week, I successfully developed a clone of the widely popular mobile game Ball Blast.<br><br>-->
+    <!--                Technologies and Features Expertise:<br><br>-->
+    <!--                &emsp;&bull;&nbsp; Singleton <br>-->
+    <!--                &emsp;&bull;&nbsp; Dynamic Level System <br>-->
+    <!--            </p>-->
+    <!--            <div style="display: flex; align-items: center; bottom: 5%">-->
+    <!--                <a href="https://github.com/TayfurSafakGencay/Ball-Blast-Clone"><i class="ti-github modal-icon-link"></i></a>-->
+    <!--                <a href="https://www.youtube.com/watch?v=8x0wWxZsJKo"><i class="ti-youtube modal-icon-link"></i></a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+</div>
+
+<script src="../../JS/ProjectModalReference.js"></script>
+<script src="../../JS/StopYoutubeVideo.js"></script>
+<script src="../../JS/GameImagesSlider/PolityImageSlider.js"></script>
+</body>

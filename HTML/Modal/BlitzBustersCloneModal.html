@@ -1,0 +1,40 @@
+﻿<link rel="stylesheet" href="../../styles.css">
+
+<body>
+
+<div class="fullscreen-div" onclick="closeModal('BlitzBustersCloneModal'); StopVideo()"></div>
+
+<div class="modal-content">
+    <div class="horizontal-div" style="width: 32%">
+        <iframe id="video" width="360" height="1080" src="https://www.youtube.com/embed/WGLQqhfnk50?si=oAali24MDcQSFNjY"
+                title="YouTube video player" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen class="video-container" style="width: 100%; height: 100%">
+        </iframe>
+    </div>
+    <div class="horizontal-div" style="width: 67%">
+        <a onclick="closeModal('BlitzBustersCloneModal'); StopVideo()"><i class="ti-close modal-icon-link"
+                                                                       style="font-size: 18px; top: 3%; right: 1%; color: red; position: absolute"></i></a>
+
+        <div class="centered-container">
+            <h2>Blitz Busters (Clone)</h2>
+            <p class="normalText" style="font-size: 18px">I completed Blitz Busters, a popular game in the mobile market,
+                in about five days. This project was aimed at replicating a successful game concept efficiently within
+                a short development period.<br><br>
+                Technologies and Features Expertise:<br><br>
+                &emsp;&bull;&nbsp; Singleton <br>
+                &emsp;&bull;&nbsp; Dynamic Level System <br>
+                &emsp;&bull;&nbsp; Smooth transitions 3D object to 2D <br>
+            </p>
+            <div style="display: flex; align-items: center; bottom: 5%">
+                <a href="https://github.com/TayfurSafakGencay/Blitz-Busters"><i class="ti-github modal-icon-link"></i></a>
+                <a href="https://www.youtube.com/watch?v=WGLQqhfnk50&t=57s"><i class="ti-youtube modal-icon-link"></i></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="../../JS/ProjectModalReference.js"></script>
+<script src="../../JS/StopYoutubeVideo.js"></script>
+</body>

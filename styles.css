@@ -628,11 +628,14 @@ footer {
 
 @media (max-width: 1099px) {
     .modal-content {
-        max-width: 100%; /* Ekran genişliği 768px'den büyük olduğunda max 1100px genişlik */
+        max-width: 100%;
         background-color: rgba(201, 201, 201, 0.9);
-        height: 100%;
+        min-height: 85%;
         width: 100%;
-        overflow-x: hidden; /* Yatay kaydırmayı engelle */
+        overflow-x: hidden;
+        position: relative; /* Modal konumunu göreceli yapar */
+        top: 4%; /* Yukarıdan %10 boşluk bırakır */
+        box-sizing: border-box;
     }
 }
 

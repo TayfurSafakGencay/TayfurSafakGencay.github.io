@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
 
     <script>document.addEventListener("DOMContentLoaded", function() {LoadModals();});</script>
+    <script>function toggleMenu() {const navbarNav = document.getElementById('navbarNav');navbarNav.classList.toggle('show');}</script>
 </head>
 <body>
 
@@ -25,7 +26,10 @@
                 <img src="Images/Icon/GameIcon.png" alt="Tayfur Şafak Gençay" class="navbar-profile-pic">
                 <span>Tayfur Şafak Gençay</span>
             </a>
-            <ul class="navbar-nav-new ms-auto">
+            <button class="navbar-toggler" onclick="toggleMenu()">
+                &#9776; <!-- Hamburger icon -->
+            </button>
+            <ul class="navbar-nav-new ms-auto" id="navbarNav">
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>

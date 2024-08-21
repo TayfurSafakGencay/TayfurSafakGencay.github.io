@@ -69,7 +69,7 @@ h1,h2,h3,span{
 
 .navbar-brand {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: 700; /* Bold yapıldı */
     color: #6a1b9a;
@@ -81,7 +81,7 @@ h1,h2,h3,span{
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 /* Navbar Nav */
@@ -625,6 +625,12 @@ footer {
     flex-direction: row;
     backdrop-filter: blur(8px); /* Gölgeleme efekti */
     z-index: 1000;
+}
+
+@media (max-width: 1099px) {
+    .modal-content {
+        max-width: 100%; /* Ekran genişliği 768px'den büyük olduğunda max 1100px genişlik */
+    }
 }
 
 .modal-icon-link {

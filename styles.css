@@ -570,7 +570,7 @@ footer {
     transition: opacity 0.75s ease, transform 0.75s ease;
 }
 
-.project-card:hover .overlay-project-card-container {
+.project-card:hover .overlay-project-card-container, .project-card-horizontal:hover .overlay-project-card-container {
     opacity: 1; /* Hover durumunda görünür */
     transform: translate(20px, 20px); /* Hover durumunda ortalanmış olarak */
 }

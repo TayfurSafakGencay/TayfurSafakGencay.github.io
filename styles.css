@@ -394,19 +394,71 @@ footer {
 
 /* ************* Projects *************** */
 
+/*.project-card-container {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: flex-start; !* Kartlar baştan itibaren sıralanır *!*/
+/*    gap: 40px; !* Kartlar arasındaki boşluk *!*/
+/*    margin-left: 5px;*/
+/*    height: auto;*/
+/*    overflow-y: hidden;*/
+/*}*/
+
 .project-card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Kartlar baştan itibaren sıralanır */
-    gap: 40px; /* Kartlar arasındaki boşluk */
+    justify-content: flex-start; /* Cards are aligned from the start */
+    gap: 40px; /* Space between cards */
     margin-left: 5px;
     height: auto;
     overflow-y: hidden;
 }
 
+@media (max-width: 768px) {
+    .project-card-container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center; /* Center align the cards */
+    }
+
+    .project-card-container > * {
+        width: 100%; /* Ensure each card takes up the full width */
+        max-width: 100%; /* Prevent any max-width limits */
+    }
+}
+
 .project-card {
     width: 22%; /* 4 kartın yan yana sığması için yaklaşık yüzde 23 genişlik */
     height: 22%;
+    min-width: 260px; /* Kartın minimum genişliği */
+    min-height: 460px; /* Kartın minimum yüksekliği */
+    /*min-width: 260px; !* Kartın minimum genişliği *!*/
+    /*min-height: 500px; !* Kartın minimum yüksekliği *!*/
+    flex-shrink: 0; /* Kartların küçülmesini engeller */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:
+            rgba(162, 4, 49, 0.4)  5px 5px,
+            rgba(162, 4, 49, 0.3) 10px 10px,
+            rgba(162, 4, 49, 0.2) 15px 15px,
+            rgba(162, 4, 49, 0.1) 20px 20px,
+            rgba(162, 4, 49, 0.05)25px 25px;
+    overflow: visible;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; /* Kart içindeki elemanlar dikey olarak hizalanır */
+    justify-content: space-between; /* Kart içindeki elemanlar arasında boşluk bırakır */
+    position: relative; /* Overlay'in konumlandırılabilmesi için gerekli */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card-horizontal{
+    width: 22%; /* 4 kartın yan yana sığması için yaklaşık yüzde 23 genişlik */
+    height: 22%;
+    min-width: 300px; /* Kartın minimum genişliği */
+    min-height: 150px; /* Kartın minimum yüksekliği */
     /*min-width: 260px; !* Kartın minimum genişliği *!*/
     /*min-height: 500px; !* Kartın minimum yüksekliği *!*/
     flex-shrink: 0; /* Kartların küçülmesini engeller */
@@ -434,7 +486,7 @@ footer {
     border-radius: 10px;
 }
 
-.project-card::after {
+.project-card::after, .project-card-horizontal::after {
     content: "";
     position: absolute;
     top: 0; /* Başlangıçta kartın dışında */
@@ -449,7 +501,7 @@ footer {
     border-radius: 10px;
 }
 
-.project-card:hover::after {
+.project-card:hover::after, .project-card-horizontal:hover::after {
     top: 20px; /* Hover durumunda pozisyon */
     left: 20px; /* Hover durumunda pozisyon */
     opacity: 1; /* Hover durumunda görünür */

@@ -12,7 +12,7 @@ html {
     margin-bottom: 0.01em;
 }
 
-h1,h2,h3,span{
+h1, h2, h3, span {
     font-family: "Roboto", sans-serif;
     color: black;
 }
@@ -32,7 +32,7 @@ h1,h2,h3,span{
     letter-spacing: 5px;
 }
 
-.section{
+.section {
     position: relative; /* Konumlamayı sağlamak için */
     overflow: auto;
     padding-top: 100px; /* Navbar yüksekliğine göre ayarlayın */
@@ -298,15 +298,14 @@ h1,h2,h3,span{
     min-width: 260px; /* Kartın minimum genişliği */
     min-height: 500px; /* Kartın minimum yüksekliği */
     flex-shrink: 0; /* Kartların küçülmesini engeller */
-    
+
     background-color: white;
     border-radius: 10px;
-    box-shadow:
-            rgba(160, 0, 255, 0.4)  5px 5px,
-            rgba(160, 0, 255, 0.3) 10px 10px,
-            rgba(160, 0, 255, 0.2) 15px 15px,
-            rgba(160, 0, 255, 0.1) 20px 20px,
-            rgba(160, 0, 255, 0.05)25px 25px;
+    box-shadow: rgba(160, 0, 255, 0.4) 5px 5px,
+    rgba(160, 0, 255, 0.3) 10px 10px,
+    rgba(160, 0, 255, 0.2) 15px 15px,
+    rgba(160, 0, 255, 0.1) 20px 20px,
+    rgba(160, 0, 255, 0.05) 25px 25px;
     overflow: visible;
     margin: 20px 0;
     text-align: center;
@@ -321,9 +320,10 @@ h1,h2,h3,span{
 .card:hover {
     box-shadow: none;
 }
-:root{
+
+:root {
     --overlay-color: rgba(160, 0, 255, 0.8);
-/*var(--overlay-color, rgba(160, 0, 255, 0.8));*/
+    /*var(--overlay-color, rgba(160, 0, 255, 0.8));*/
 }
 
 .card::after {
@@ -369,7 +369,7 @@ h1,h2,h3,span{
     margin-bottom: 10px; /* Madde işaretleri arasına boşluk ekler */
 }
 
-.overlay-card-text-list-element{
+.overlay-card-text-list-element {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -377,7 +377,7 @@ h1,h2,h3,span{
     margin-left: -20px;
 }
 
-.overlay-card-text{
+.overlay-card-text {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -425,9 +425,9 @@ h1,h2,h3,span{
     max-width: 100%; /* Kart genişliğini aşmaması için maksimum genişlik */
 }
 
- .clickable-text {
-     cursor: pointer;
- }
+.clickable-text {
+    cursor: pointer;
+}
 
 .clickable-text:hover {
     color: yellow; /* Hover durumunda renk değişimi */
@@ -486,12 +486,11 @@ footer {
     flex-shrink: 0; /* Kartların küçülmesini engeller */
     background-color: white;
     border-radius: 10px;
-    box-shadow:
-            rgba(162, 4, 49, 0.4)  5px 5px,
-            rgba(162, 4, 49, 0.3) 10px 10px,
-            rgba(162, 4, 49, 0.2) 15px 15px,
-            rgba(162, 4, 49, 0.1) 20px 20px,
-            rgba(162, 4, 49, 0.05)25px 25px;
+    box-shadow: rgba(162, 4, 49, 0.4) 5px 5px,
+    rgba(162, 4, 49, 0.3) 10px 10px,
+    rgba(162, 4, 49, 0.2) 15px 15px,
+    rgba(162, 4, 49, 0.1) 20px 20px,
+    rgba(162, 4, 49, 0.05) 25px 25px;
     overflow: visible;
     margin: 20px 0;
     text-align: center;
@@ -504,7 +503,7 @@ footer {
     cursor: pointer;
 }
 
-.project-card-horizontal{
+.project-card-horizontal {
     width: 22%; /* 4 kartın yan yana sığması için yaklaşık yüzde 23 genişlik */
     height: 22%;
     min-width: 300px; /* Kartın minimum genişliği */
@@ -514,12 +513,11 @@ footer {
     flex-shrink: 0; /* Kartların küçülmesini engeller */
     background-color: white;
     border-radius: 10px;
-    box-shadow:
-            rgba(162, 4, 49, 0.4)  5px 5px,
-            rgba(162, 4, 49, 0.3) 10px 10px,
-            rgba(162, 4, 49, 0.2) 15px 15px,
-            rgba(162, 4, 49, 0.1) 20px 20px,
-            rgba(162, 4, 49, 0.05)25px 25px;
+    box-shadow: rgba(162, 4, 49, 0.4) 5px 5px,
+    rgba(162, 4, 49, 0.3) 10px 10px,
+    rgba(162, 4, 49, 0.2) 15px 15px,
+    rgba(162, 4, 49, 0.1) 20px 20px,
+    rgba(162, 4, 49, 0.05) 25px 25px;
     overflow: visible;
     margin: 20px 0;
     text-align: center;
@@ -532,7 +530,7 @@ footer {
     cursor: pointer;
 }
 
-.project-image{
+.project-image {
     border-radius: 10px;
 }
 
@@ -543,7 +541,7 @@ footer {
     left: 0; /* Başlangıçta kartın dışında */
     width: 100%; /* Kartın genişliği */
     height: 100%; /* Kartın yüksekliği */
-    background: rgba(162, 4, 49, 0.9); 
+    background: rgba(162, 4, 49, 0.9);
     z-index: 2; /* Overlay’in içerikten arkada kalmasını sağlar */
     opacity: 0;
     transition: top 0.75s ease, left 0.75s ease, opacity 0.75s ease; /* Pozisyon ve opaklık için geçiş */
@@ -575,7 +573,7 @@ footer {
     transform: translate(20px, 20px); /* Hover durumunda ortalanmış olarak */
 }
 
-.overlay-project-card-text{
+.overlay-project-card-text {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -605,7 +603,7 @@ footer {
 }
 
 .modal-content {
-/*rgba(255, 255, 255, 0.7)*/
+    /*rgba(255, 255, 255, 0.7)*/
     background-color: rgba(201, 201, 201, 0.75);
     padding: 20px;
     border: 1px solid #888;
@@ -659,7 +657,7 @@ footer {
 .video-container {
     justify-content: center; /* Centers horizontally */
     align-content: center;
-    vertical-align: center;  
+    vertical-align: center;
     width: 100%;
     height: 100%;
 }
@@ -700,6 +698,15 @@ footer {
     position: relative;
 }
 
+@media (max-width: 1099px) {
+    .slider-container {
+        max-width: 100%; /* Ekran genişliği 768px'den büyük olduğunda max 1100px genişlik */
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden; /* Yatay kaydırmayı engelle */
+    }
+}
+
 .slider-image {
     width: auto;
     max-width: 85%; /* Adjust as needed */
@@ -732,19 +739,19 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-.png-icons{
+.png-icons {
     height: 30px;
     width: 30px;
     object-fit: contain; /* Görüntü boyutlandırmasını korur */
 }
 
-.png-icons:hover{
+.png-icons:hover {
     cursor: pointer;
 }
 
 .icon-container {
-    display: flex;             /* Flexbox modelini kullan */
-    justify-content: center;   /* İkonları yatayda ortala */
-    align-items: center;       /* İkonları dikeyde ortala */
-    gap: 10px;                 /* İkonlar arasına boşluk ekle */
+    display: flex; /* Flexbox modelini kullan */
+    justify-content: center; /* İkonları yatayda ortala */
+    align-items: center; /* İkonları dikeyde ortala */
+    gap: 10px; /* İkonlar arasına boşluk ekle */
 }

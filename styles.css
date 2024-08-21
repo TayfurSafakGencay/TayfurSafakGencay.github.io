@@ -4,12 +4,11 @@ body {
     margin: 0;
     padding: 0;
     color: black;
-    height: 2000px;
     overflow: scroll;
 }
 
 html {
-    height: 110%;
+    height: 100%;
     margin-bottom: 0.01em;
 }
 
@@ -36,7 +35,8 @@ h1,h2,h3,span{
 .section{
     position: relative; /* Konumlamayı sağlamak için */
     overflow: auto;
-    padding-top: 200px; /* Navbar yüksekliğine göre ayarlayın */
+    padding-top: 100px; /* Navbar yüksekliğine göre ayarlayın */
+    margin-top: 100px;
 }
 
 /* Main Container */
@@ -584,6 +584,7 @@ footer {
     justify-content: center; /* Centers the text horizontally */
     align-items: center; /* Centers the text vertically */
     height: 100%; /* Ensures the text container takes up the full height */
+    width: 100%;
     text-align: center;
 }
 

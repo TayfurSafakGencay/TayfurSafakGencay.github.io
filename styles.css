@@ -628,13 +628,13 @@ footer {
 
 @media (max-width: 768px) {
     .modal-content {
-        max-width: 100%;
+        max-width: 90%;
         background-color: rgba(201, 201, 201, 0.9);
         min-height: 85%;
-        width: 100%;
+        width: 90%;
         overflow-x: hidden;
-        position: relative; /* Modal konumunu göreceli yapar */
-        top: 4%; /* Yukarıdan %10 boşluk bırakır */
+        position: relative;
+        top: 4%; 
         box-sizing: border-box;
     }
 }

@@ -5,20 +5,20 @@
 <div class="fullscreen-div" onclick="closeModal('RoyalMatchCloneModal'); StopVideo()"></div>
 
 <div class="modal-content">
-    <div class="horizontal-div" style="width: 32%">
-        <iframe id="video" width="360" height="1080" src="https://www.youtube.com/embed/TKk2-FOAemo?si=Po5sAnoZNjbN3uND" 
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write;encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                style="width: 100%; height: 100%" class="video-container">
-        </iframe>
-    </div>
-    <div class="horizontal-div" style="width: 67%">
-        <a onclick="closeModal('RoyalMatchCloneModal'); StopVideo()"><i class="ti-close modal-icon-link" 
-                         style="font-size: 18px; top: 3%; right: 1%; color: red; position: absolute"></i></a>
-        
-        <div class="centered-container">
+    <div class="centered-container">
+        <div>
+            <a onclick="closeModal('RoyalMatchCloneModal'); StopVideo()"><i class="ti-close modal-icon-link"
+                                                                            style="font-size: 18px; top: 3%; right: 1%; color: red; position: absolute"></i></a>
             <h2>Royal Match (Clone)</h2>
+        </div>
+        <div class="video-container">
+            <iframe id="video" src="https://www.youtube.com/embed/TKk2-FOAemo?si=Po5sAnoZNjbN3uND"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+             web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 100%; height: 100%">
+            </iframe>
+        </div>
+        <div style="max-width: 560px">
             <p class="normalText" style="font-size: 18px"><br>Our team of four successfully completed a project assigned by a company as a case study.
                 We divided the responsibilities as follows:<br><br>
                 <b>Tayfur Şafak Gençay</b> - Gameplay Mechanics <br>
@@ -34,13 +34,12 @@
                 &emsp;&bull;&nbsp; Custom Pieces; Vertical & Horizontal Rocket, Bomb, Rainbow, Obstacle <br>
                 &emsp;&bull;&nbsp; Custom Interactions <br>
             </p>
-            <div style="display: flex; align-items: center; margin-bottom: 5%">
-                <a href="https://github.com/TayfurSafakGencay/Velo-Games-Case-3-Match-3"><i class="ti-github modal-icon-link"></i></a>
-                <a href="https://www.youtube.com/watch?v=TKk2-FOAemo"><i class="ti-youtube modal-icon-link"></i></a>
-            </div>
+        </div>
+        <div style="display: flex; align-items: center; bottom: 5%">
+            <a href="https://github.com/TayfurSafakGencay/Velo-Games-Case-3-Match-3"><i class="ti-github modal-icon-link"></i></a>
+            <a href="https://www.youtube.com/watch?v=TKk2-FOAemo"><i class="ti-youtube modal-icon-link"></i></a>
         </div>
     </div>
-    
 </div>
 
 <script src="../../JS/ProjectModalReference.js"></script>

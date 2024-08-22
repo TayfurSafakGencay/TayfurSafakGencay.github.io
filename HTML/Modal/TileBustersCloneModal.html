@@ -5,33 +5,32 @@
 <div class="fullscreen-div" onclick="closeModal('TileBustersCloneModal'); StopVideo()"></div>
 
 <div class="modal-content">
-    <div class="horizontal-div" style="width: 32%">
-        <iframe id="video" width="360" height="1080" src="https://www.youtube.com/embed/tKGh7rNmHRs?si=eX-MBpUxVBjtDuGn"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-             web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-container"
-        style="width: 100%; height: 100%">
-        </iframe>
-    </div>
-    <div class="horizontal-div" style="width: 67%">
-        <a onclick="closeModal('TileBustersCloneModal'); StopVideo()"><i class="ti-close modal-icon-link" 
-                         style="font-size: 18px; top: 3%; right: 1%; color: red; position: absolute"></i></a>
-        
-        <div class="centered-container">
+    <div class="centered-container">
+        <div>
+            <a onclick="closeModal('TileBustersCloneModal'); StopVideo()"><i class="ti-close modal-icon-link"
+                                                                             style="font-size: 18px; top: 3%; right: 1%; color: red; position: absolute"></i></a>
             <h2>Tile Busters (Clone)</h2>
+        </div>
+        <div>
+            <iframe id="video" src="https://www.youtube.com/embed/tKGh7rNmHRs?si=eX-MBpUxVBjtDuGn"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+             web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-container">
+            </iframe>
+        </div>
+        <div style="max-width: 560px">
             <p class="normalText" style="font-size: 18px">In under a week, I successfully developed a clone of the widely popular mobile game Tile Busters.<br><br>
                 Technologies and Features Expertise:<br><br>
                 &emsp;&bull;&nbsp; Singleton <br>
                 &emsp;&bull;&nbsp; Battle Pass System <br>
                 &emsp;&bull;&nbsp; Basic Skin System <br>
             </p>
-            <div style="display: flex; align-items: center; bottom: 5%">
-                <a href="https://github.com/TayfurSafakGencay/TileBusters"><i class="ti-github modal-icon-link"></i></a>
-                <a href="https://www.youtube.com/watch?v=tKGh7rNmHRs"><i class="ti-youtube modal-icon-link"></i></a>
-            </div>
+        </div>
+        <div style="display: flex; align-items: center; bottom: 5%">
+            <a href="https://github.com/TayfurSafakGencay/TileBusters"><i class="ti-github modal-icon-link"></i></a>
+            <a href="https://www.youtube.com/watch?v=tKGh7rNmHRs"><i class="ti-youtube modal-icon-link"></i></a>
         </div>
     </div>
-    
 </div>
 
 <script src="../../JS/ProjectModalReference.js"></script>

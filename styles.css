@@ -626,7 +626,7 @@ footer {
     z-index: 1000;
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 768px) {
     .modal-content {
         max-width: 100%;
         background-color: rgba(201, 201, 201, 0.9);
@@ -661,12 +661,24 @@ footer {
     justify-content: center; /* Centers horizontally */
     align-content: center;
     vertical-align: center;
-    width: 100%;
-    height: 100%;
+    max-width: 560px;
+    width: 560px;
+    max-height: 315px;
+    height: 315px;
+}
+
+@media (max-width: 768px)
+{
+    .video-container
+    {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
 }
 
 .horizontal-div {
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 
@@ -676,7 +688,9 @@ footer {
     justify-content: space-between;
     align-items: center; /* Bu, içerikleri yatayda ortalar */
     margin-left: 15px; /* Varsayılan margin */
-    height: 100%;
+    height: auto;
+    width: 100%;
+    gap: 20px;
 }
 
 .fullscreen-div {
@@ -701,7 +715,7 @@ footer {
     position: relative;
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 768px) {
     .slider-container {
         max-width: 100%; /* Ekran genişliği 768px'den büyük olduğunda max 1100px genişlik */
         width: 100%;
@@ -726,7 +740,7 @@ footer {
     border-radius: 8px; /* Köşeleri yuvarlatır */
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 768px) {
     .slider-container {
         max-width: 100%; /* Ekran genişliği 768px'den büyük olduğunda max 1100px genişlik */
         width: 100%;

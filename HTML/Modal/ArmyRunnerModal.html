@@ -1,0 +1,42 @@
+﻿<link rel="stylesheet" href="../../styles.css">
+
+<body>
+
+<div class="fullscreen-div" onclick="closeModal('ArmyRunnerModal'); StopVideo()"></div>
+
+<div class="modal-content">
+    <div class="centered-container">
+        <div>
+            <a onclick="closeModal('ArmyRunnerModal'); StopVideo()"><i class="ti-close modal-icon-link"
+                                                                             style="font-size: 18px; top: 3%; right: 1%; color: red; position: absolute"></i></a>
+            <h2>Army Runner</h2>
+        </div>
+        <div class="video-container">
+            <iframe id="video" src="https://www.youtube.com/embed/3QhUjTna_6U?si=K-novo7dtfZYGws0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+             web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 100%; height: 100%">
+            </iframe>
+        </div>
+        <div style="max-width: 560px">
+            <p class="normalText" style="font-size: 18px">A distinct example of the recently popular runner genre.<br><br>
+                Technologies and Features Expertise:<br><br>
+                &emsp;&bull;&nbsp; Singleton <br>
+                &emsp;&bull;&nbsp; Advanced Scriptable Object Gun System <br>
+                &emsp;&bull;&nbsp; Object Pooling  <br>
+                &emsp;&bull;&nbsp; Optimization with Manager management  <br>
+                &emsp;&bull;&nbsp; Different types of guns  <br>
+                &emsp;&bull;&nbsp; Formation  <br>
+                &emsp;&bull;&nbsp; Animation System With Layers  <br>
+            </p>
+        </div>
+        <div style="display: flex; align-items: center; bottom: 5%">
+            <a href="https://github.com/TayfurSafakGencay/ArmyRunner"><i class="ti-github modal-icon-link"></i></a>
+            <a href="https://www.youtube.com/watch?v=3QhUjTna_6U"><i class="ti-youtube modal-icon-link"></i></a>
+        </div>
+    </div>
+</div>
+
+<script src="../../JS/ProjectModalReference.js"></script>
+<script src="../../JS/StopYoutubeVideo.js"></script>
+</body>

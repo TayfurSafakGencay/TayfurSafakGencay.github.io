@@ -4,10 +4,10 @@
         'about': '../HTML/Section/About.html',
         'experience': '../HTML/Section/Experience.html',
         'projects': '../HTML/Section/Projects.html',
-        'contact': '../HTML/Section/Contact.html'
+        // 'knowledge': '../HTML/Section/UnityKnowledge.html',
+        'contact': '../HTML/Section/Contact.html',
     };
 
-    // Her section için içerik yükleme işlemi
     Object.keys(sections).forEach(id => {
         const section = document.getElementById(id);
         if (section)

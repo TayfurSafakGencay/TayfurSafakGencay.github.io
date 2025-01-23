@@ -813,3 +813,47 @@ footer {
     align-items: center; /* İkonları dikeyde ortala */
     gap: 10px; /* İkonlar arasına boşluk ekle */
 }
+
+
+/* *********** Knowledge ***********/
+
+.card9 {
+    width: 300px;
+    height: 430px;
+    border-radius: 15px;
+    /* background-color: #2c2a2a; */
+    background: linear-gradient(to right, rgb(20, 145, 111) 0%, rgb(228, 230, 105) 100%);
+    border-radius: 20px;
+    transition: all .2s;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.card9:hover {
+    transform: scale(1.15);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -webkit-transform: scale(10);
+    -moz-transform: scale(10);
+    -ms-transform: scale(10);
+    -o-transform: scale(10);
+}
+
+/*.p_color {*/
+/*    color: var(--theme-ui-colors-black, #000);*/
+/*    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+
+/*}*/
+
+/*.p_hcolor {*/
+/*    color: var(--theme-ui-colors-black, #000);*/
+/*    font-size: 35px;*/
+/*    font-weight: 700;*/
+/*    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+/*    margin-top: 29px;*/
+/*}*/

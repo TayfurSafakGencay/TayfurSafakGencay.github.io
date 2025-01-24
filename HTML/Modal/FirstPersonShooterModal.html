@@ -1,0 +1,35 @@
+﻿<link rel="stylesheet" href="../../styles.css">
+
+<body>
+
+<div class="fullscreen-div" onclick="closeModal('FirstPersonShooterModal'); StopVideo()"></div>
+
+<div class="modal-content">
+    <div class="centered-container">
+        <div>
+            <a onclick="closeModal('FirstPersonShooterModal'); StopVideo()"><i class="ti-close modal-icon-link"
+                                                                             style="font-size: 18px; top: 3%; right: 1%; color: red; position: absolute"></i></a>
+            <h2>First Person Shooter</h2>
+        </div>
+        <div class="video-container">
+            <iframe id="video" src="https://www.youtube.com/embed/Y_QqOmzNLzQ?si=dMnmMnfZ71vsVePq"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+             web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 100%; height: 100%">
+            </iframe>
+        </div>
+        <div style="max-width: 560px">
+            <p class="normalText" style="font-size: 18px">
+            </p>
+        </div>
+        <div style="display: flex; align-items: center; bottom: 5%">
+            <a href="https://github.com/TayfurSafakGencay/First-Person-Shooter"><i class="ti-github modal-icon-link"></i></a>
+            <a href="https://www.youtube.com/embed/Y_QqOmzNLzQ?si=bTY2aoJLR0RuabB8"><i class="ti-youtube modal-icon-link"></i></a>
+            <a href="https://itch.io/dashboard"><i class="ti-zip modal-icon-link"></i></a>
+        </div>
+    </div>
+</div>
+
+<script src="../../JS/ProjectModalReference.js"></script>
+<script src="../../JS/StopYoutubeVideo.js"></script>
+</body>

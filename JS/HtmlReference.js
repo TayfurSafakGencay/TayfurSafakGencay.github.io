@@ -4,7 +4,7 @@
         'about': '../HTML/Section/About.html',
         'experience': '../HTML/Section/Experience.html',
         'projects': '../HTML/Section/Projects.html',
-        // 'knowledge': '../HTML/Section/UnityKnowledge.html',
+        'knowledge': '../HTML/Section/UnityKnowledge.html',
         'contact': '../HTML/Section/Contact.html',
     };
 

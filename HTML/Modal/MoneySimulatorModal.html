@@ -1,33 +1,56 @@
 ﻿<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../ExtraPage.css">
+<link rel="stylesheet" href="../../CSS/Themify/themify-icons.css">
 
+<head>
+    <title>Tayfur Şafak Gençay - Money Simulator</title>
+</head>
 <body>
-
-<div class="fullscreen-div" onclick="closeModal('MoneySimulatorModal'); StopVideo()"></div>
-
-<div class="modal-content" style="height: 85%; width: 100%; margin-top: 5%;">
-    <div class="centered-container" style="margin-left: 0; width: 100%">
-        <h2 style="text-align: center">Money Simulator</h2>
-
-        <a onclick="closeModal('MoneySimulatorModal'); StopVideo()"><i class="ti-close modal-icon-link"
-                                                                 style="font-size: 18px; top: 3%; right: 1%; color: red; position: absolute"></i></a>
-
-        <div style="position: relative; top: 25px">
-            <p class="normalText" style="font-size: 18px; text-align: justify">
-                Project details will be added after the official release.
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            </p>
-        </div>
-
-        <div class="icon-container" style="margin-top: 25px; margin-bottom: 25px">
-            <a href="https://store.steampowered.com/app/2994190/Money_Simulator/" target="_blank">
-                <img src="../../Images/Icons/steam.png" alt="steam" class="png-icons" style="height: 45px;width: 45px">
-            </a>
-            <a href="https://video.cloudflare.steamstatic.com/store_trailers/257048075/movie480_vp9.webm?t=1724234512">
-                <i class="ti-youtube modal-icon-link"></i></a>
-        </div>
+<div class="sidebar">
+    <div class="logo-container">
+        <div class="logo g1">Money Simulator</div>
     </div>
+    <div class="gradient-line"></div>
+    <ul>
+        <li class="active">
+            <a href="#" onclick="loadContent(currentProject, 'Introduction')">Introduction</a>
+        </li>
+        <li>
+            <a href="#" class="toggle">
+                <span class="label">Market<span class="star">★★★★★</span></span>
+                <span class="arrow">▶</span>
+            </a>     
+            <ul>
+                <li>
+                    <a href="#" class="toggle">Employees <span class="arrow">▶</span></a>
+                    <ul>
+                        <li><a href="#" onclick="loadContent(currentProject, 'Cleaner')">Cleaner</a></li>
+                        <li><a href="#" onclick="loadContent(currentProject, 'CashRegister')">Cash Register</a></li>
+                        <li><a href="#" onclick="loadContent(currentProject, 'ShelfStocker')">Shelf Stocker</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="loadContent(currentProject, '')">Simulation</a></li>
+            </ul>
+        </li>
+    </ul>
 </div>
 
-<script src="../../JS/ProjectModalReference.js"></script>
-<script src="../../JS/StopYoutubeVideo.js"></script>
+<div class="page-content" id="content">
+
+</div>
+
+<script src="../../JS/LoadContent.js"></script>
+<script>
+    const currentProject = 'MoneySimulator';
+</script>
+
 </body>
+<!--</div>-->
+<!--<div class="sidebar">-->
+<!--    <div class="menu-title">Arabalar</div>-->
+<!--    <div class="menu-item" onclick="loadContent('MoneySimulator', 'BMW')">BMW</div>-->
+<!--    <div class="menu-item" onclick="loadContent('mercedes')">Mercedes</div>-->
+<!--    <div style="margin-left:20px;">-->
+<!--        <div class="menu-item" onclick="loadContent('mercedes-s')">- S</div>-->
+<!--    </div>-->
+<!--</div>-->

@@ -19,3 +19,7 @@
         }
     });
 });
+
+function openPage(pageId) {
+    window.location.href = 'HTML/Modal/' + pageId + '.html';
+}

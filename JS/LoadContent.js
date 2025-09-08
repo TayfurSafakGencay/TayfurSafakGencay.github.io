@@ -1,9 +1,16 @@
-﻿function loadContent(projectName, fileName) {
+﻿function getBasePath() {
+    const pathParts = window.location.pathname.split('/');
+    // boşlukları filtrele
+    const cleanParts = pathParts.filter(p => p.length > 0);
+    // Eğer repo adı varsa (ör: /Portfolio/...), ilk parçayı al
+    return cleanParts.length > 0 ? '/' + cleanParts[0] : '';
+}
+
+function loadContent(projectName, fileName) {
     const content = document.getElementById('content');
     content.innerHTML = "<p>Yükleniyor...</p>";
 
-    const basePath = '/Portfolio';
-
+    const basePath = getBasePath();
     const path = `${basePath}/HTML/Contents/${projectName}/${fileName}.html`;
 
     console.log("Denemeye çalışılan dosya:", path);

@@ -2,10 +2,9 @@
     const content = document.getElementById('content');
     content.innerHTML = "<p>Yükleniyor...</p>";
 
-    // Dinamik base path (lokalde / olur, GitHub'da /Portfolio/ olur)
-    const basePath = window.location.pathname.split('/')[1] ? `/${window.location.pathname.split('/')[1]}` : "";
+    const basePath = '/Portfolio';
 
-    const path = `/HTML/Contents/${projectName}/${fileName}.html`;
+    const path = `${basePath}/HTML/Contents/${projectName}/${fileName}.html`;
 
     console.log("Denemeye çalışılan dosya:", path);
 

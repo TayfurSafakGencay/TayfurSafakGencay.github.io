@@ -11,7 +11,7 @@ function loadContent(projectName, fileName) {
     content.innerHTML = "<p>Yükleniyor...</p>";
 
     const basePath = getBasePath();
-    const path = `${basePath}/HTML/Contents/${projectName}/${fileName}.html`;
+    const path = `${basePath}/Contents/${projectName}/${fileName}.html`;
 
     console.log("Denemeye çalışılan dosya:", path);
 

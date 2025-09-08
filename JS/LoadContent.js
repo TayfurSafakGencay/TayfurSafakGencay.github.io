@@ -1,14 +1,20 @@
 ﻿function getBasePath() {
-    const pathParts = window.location.pathname.split('/');
-    // boşlukları filtrele
-    const cleanParts = pathParts.filter(p => p.length > 0);
-    // Eğer repo adı varsa (ör: /Portfolio/...), ilk parçayı al
-    return cleanParts.length > 0 ? '/' + cleanParts[0] : '';
+    const pathParts = window.location.pathname.split('/').filter(p => p.length > 0);
+
+    // Eğer GitHub Pages'te çalışıyorsa (repo içinde HTML klasörü var)
+    if (pathParts.includes("HTML")) {
+        // Yalnızca "HTML" klasöründen başlat
+        const htmlIndex = pathParts.indexOf("HTML");
+        return "/" + pathParts.slice(0, htmlIndex + 1).join("/");
+    }
+
+    // Lokalde (Rider) çalışıyorsa kök (boş string)
+    return "";
 }
 
 function loadContent(projectName, fileName) {
     const content = document.getElementById('content');
-    content.innerHTML = "<p>Yükleniyor...</p>";
+    content.innerHTML = "<p>Loading...</p>";
 
     const basePath = getBasePath();
     const path = `${basePath}/Contents/${projectName}/${fileName}.html`;
@@ -29,7 +35,7 @@ function loadContent(projectName, fileName) {
         });
 }
 
-// Toggle başlıklar (alt menü açanlar)
+
 const toggles = document.querySelectorAll('.sidebar li > a.toggle');
 toggles.forEach(toggle => {
     toggle.addEventListener('click', function(e) {

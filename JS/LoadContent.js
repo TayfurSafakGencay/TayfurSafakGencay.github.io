@@ -2,21 +2,25 @@
     const content = document.getElementById('content');
     content.innerHTML = "<p>Yükleniyor...</p>";
 
-    const path = `/Portfolio/HTML/Contents/${projectName}/${fileName}.html`;
+    // GitHub Pages kökünü ekle
+    const basePath = "/Portfolio"; // <-- kendi repo adını buraya yaz
+    const path = `${basePath}/HTML/Contents/${projectName}/${fileName}.html`;
+
     console.log("Denemeye çalışılan dosya:", path);
 
-    fetch(path).then(response => {
-        console.log("Fetch response:", response);
-        if (!response.ok) throw new Error("Dosya bulunamadı: " + path);
-        return response.text();
-    }).then(data => {
-        content.innerHTML = data;
-    }).catch(err => {
-        content.innerHTML = `<p style="color:red;">Hata: ${err.message}</p>`;
-        console.error("Hata detayı:", err);
-    });
+    fetch(path)
+        .then(response => {
+            if (!response.ok) throw new Error("Dosya bulunamadı: " + path);
+            return response.text();
+        })
+        .then(data => {
+            content.innerHTML = data;
+        })
+        .catch(err => {
+            content.innerHTML = `<p style="color:red;">Hata: ${err.message}</p>`;
+            console.error("Hata detayı:", err);
+        });
 }
-
 // Toggle başlıklar (alt menü açanlar)
 const toggles = document.querySelectorAll('.sidebar li > a.toggle');
 toggles.forEach(toggle => {

@@ -5,7 +5,7 @@
     // Dinamik base path (lokalde / olur, GitHub'da /Portfolio/ olur)
     const basePath = window.location.pathname.split('/')[1] ? `/${window.location.pathname.split('/')[1]}` : "";
 
-    const path = `${basePath}/HTML/Contents/${projectName}/${fileName}.html`;
+    const path = `/HTML/Contents/${projectName}/${fileName}.html`;
 
     console.log("Denemeye çalışılan dosya:", path);
 

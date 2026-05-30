@@ -1,0 +1,217 @@
+<!-- Testimonials Carousel Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2 class="section-title">Client Testimonials</h2>
+        <p class="section-subtitle">What our happy clients say about working with us</p>
+        
+        <div class="carousel-3d-container">
+            <!-- Previous Arrow -->
+            <button class="carousel-arrow carousel-arrow-prev" id="carouselPrev">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+
+            <!-- Next Arrow -->
+            <button class="carousel-arrow carousel-arrow-next" id="carouselNext">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <div class="carousel-3d" id="carousel3d">
+                <!-- Testimonial 1 -->
+                <div class="carousel-item" data-index="0">
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <div class="image-icon">👨‍💼</div>
+                            <div class="card-badge">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">
+                                Harika bir deneyim! Projeyi zamanında ve beklentilerimizin ötesinde teslim etti. 
+                                Teknik bilgisi ve iletişimi mükemmeldi. Kesinlikle tekrar çalışmak isterim.
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Ahmet Yılmaz</h4>
+                                <p>CEO, TechStart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="carousel-item" data-index="1">
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <div class="image-icon">👩‍💻</div>
+                            <div class="card-badge">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">
+                                Profesyonel yaklaşımı ve yaratıcı çözümleri sayesinde e-ticaret sitemiz harika oldu. 
+                                Kullanıcı deneyimi çok iyi tasarlanmış. Çok teşekkürler!
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Zeynep Kaya</h4>
+                                <p>Kurucu, ShopHub</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="carousel-item" data-index="2">
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <div class="image-icon">👨‍🎨</div>
+                            <div class="card-badge">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">
+                                Mobil uygulamamızı geliştirirken gösterdiği özveri ve kalite odaklı çalışması 
+                                bizi çok etkiledi. Sonuç gerçekten harika oldu!
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Mehmet Demir</h4>
+                                <p>CTO, AppLab</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="carousel-item" data-index="3">
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <div class="image-icon">👩‍💼</div>
+                            <div class="card-badge">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">
+                                Dashboard uygulamamız için yaptığı tasarım ve kodlama çok başarılıydı. 
+                                Ekibimizle mükemmel uyum sağladı. Kesinlikle tavsiye ederim!
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Ayşe Şahin</h4>
+                                <p>Proje Müdürü, DataViz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+            </div>
+
+            <!-- Navigation Hint -->
+            <div class="carousel-hint">
+                <span class="hint-icon">👆</span>
+                <p>Use arrows | Click active card | Double-click any card</p>
+            </div>
+
+            <!-- Test Buttons for Modal -->
+            <div class="test-buttons" style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+                <button onclick="window.testModal && window.testModal(0)" class="btn btn-primary">Test Modal 1</button>
+                <button onclick="window.testModal && window.testModal(1)" class="btn btn-secondary">Test Modal 2</button>
+                <button onclick="window.testModal && window.testModal(2)" class="btn btn-primary">Test Modal 3</button>
+                <button onclick="window.testModal && window.testModal(3)" class="btn btn-secondary">Test Modal 4</button>
+            </div>
+        </div>
+
+        <!-- Modal Overlay & Wrapper -->
+        <div class="modal-overlay" id="testimonialModal">
+            <div class="modal-wrapper">
+                <button class="modal-close" id="modalClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <div class="modal-avatar" id="modalAvatar">👨‍💼</div>
+                        <div class="modal-header-info">
+                            <h2 id="modalName">Client Name</h2>
+                            <p id="modalPosition">Position, Company</p>
+                            <div class="modal-rating" id="modalRating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <div class="quote-mark">"</div>
+                        <p class="modal-testimonial" id="modalTestimonial">
+                            Testimonial text will appear here...
+                        </p>
+                        <div class="quote-mark quote-mark-end">"</div>
+                    </div>
+
+                    <!-- Modal Footer - Additional Info -->
+                    <div class="modal-footer">
+                        <div class="modal-info-grid">
+                            <div class="modal-info-item">
+                                <div class="info-icon">📅</div>
+                                <div class="info-content">
+                                    <h4>Project Date</h4>
+                                    <p id="modalDate">January 2024</p>
+                                </div>
+                            </div>
+                            <div class="modal-info-item">
+                                <div class="info-icon">💼</div>
+                                <div class="info-content">
+                                    <h4>Project Type</h4>
+                                    <p id="modalProjectType">Web Development</p>
+                                </div>
+                            </div>
+                            <div class="modal-info-item">
+                                <div class="info-icon">⏱️</div>
+                                <div class="info-content">
+                                    <h4>Duration</h4>
+                                    <p id="modalDuration">3 Months</p>
+                                </div>
+                            </div>
+                            <div class="modal-info-item">
+                                <div class="info-icon">🎯</div>
+                                <div class="info-content">
+                                    <h4>Result</h4>
+                                    <p id="modalResult">Successful</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Technologies Used -->
+                        <div class="modal-technologies">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-tags" id="modalTech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Section -->
+                        <div class="modal-accordion">
+                            <h4>Project Details</h4>
+                            <div class="accordion-container" id="modalAccordion">
+                                <!-- Accordion items will be dynamically inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

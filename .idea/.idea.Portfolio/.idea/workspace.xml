@@ -10,17 +10,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b32c96a-7c15-44e4-8f05-93ebd25feaeb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio.dir/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio.dir/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="8b32c96a-7c15-44e4-8f05-93ebd25feaeb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,23 +34,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4903953761849547" />
-      <entry key="MS500" value="4.155253933388953" />
-      <entry key="S2" value="8.187065956158532" />
-      <entry key="S5" value="10.16239241340439" />
-      <entry key="S10" value="11.017139512828889" />
-      <entry key="S30" value="11.656790216630178" />
-      <entry key="S60" value="11.826354578167262" />
-      <entry key="M2" value="11.912659981684154" />
-      <entry key="M5" value="11.964938908019372" />
-      <entry key="M10" value="11.98244852846724" />
-      <entry key="M15" value="11.988294363053528" />
-      <entry key="M30" value="11.994144852111601" />
-      <entry key="H1" value="11.997071843429433" />
-      <entry key="H2" value="11.998535776024033" />
-      <entry key="H4" value="11.999267851585085" />
-      <entry key="D1" value="11.99987797020452" />
-      <entry key="W1" value="11.999982567048162" />
+      <entry key="MS100" value="1.2784895510323833" />
+      <entry key="MS500" value="3.970975369633282" />
+      <entry key="S2" value="8.528416877832246" />
+      <entry key="S5" value="10.827116600716005" />
+      <entry key="S10" value="11.833877562258188" />
+      <entry key="S30" value="12.591794465900604" />
+      <entry key="S60" value="12.793337887807589" />
+      <entry key="M2" value="12.896019540984046" />
+      <entry key="M5" value="12.958250717313303" />
+      <entry key="M10" value="12.979099071191678" />
+      <entry key="M15" value="12.986060198050392" />
+      <entry key="M30" value="12.993027172379263" />
+      <entry key="H1" value="12.996512854164047" />
+      <entry key="H2" value="12.998256244030092" />
+      <entry key="H4" value="12.999128076246368" />
+      <entry key="D1" value="12.999854673017149" />
+      <entry key="W1" value="12.999979238846759" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -82,23 +72,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.4492183587316312" />
-      <entry key="MS500" value="4.125436227385804" />
-      <entry key="S2" value="8.160026286787529" />
-      <entry key="S5" value="10.14619338631357" />
-      <entry key="S10" value="11.007774094633065" />
-      <entry key="S30" value="11.653341626282437" />
-      <entry key="S60" value="11.824586243372345" />
-      <entry key="M2" value="11.911764550622836" />
-      <entry key="M5" value="11.964577999202389" />
-      <entry key="M10" value="11.982267615207164" />
-      <entry key="M15" value="11.988173652039114" />
-      <entry key="M30" value="11.994084445465283" />
-      <entry key="H1" value="11.997041627311747" />
-      <entry key="H2" value="11.998520664765342" />
-      <entry key="H4" value="11.999260295155628" />
-      <entry key="D1" value="11.999876710688472" />
-      <entry key="W1" value="11.999982387114578" />
+      <entry key="MS100" value="0.4752708864716875" />
+      <entry key="MS500" value="3.6776507081767003" />
+      <entry key="S2" value="8.427254934727875" />
+      <entry key="S5" value="10.780204486525406" />
+      <entry key="S10" value="11.80892017368911" />
+      <entry key="S30" value="12.583088053481722" />
+      <entry key="S60" value="12.78893247437407" />
+      <entry key="M2" value="12.893803479310137" />
+      <entry key="M5" value="12.957361047840145" />
+      <entry key="M10" value="12.978653692318998" />
+      <entry key="M15" value="12.9857631576345" />
+      <entry key="M30" value="12.992878591525399" />
+      <entry key="H1" value="12.996438548563958" />
+      <entry key="H2" value="12.9982190874353" />
+      <entry key="H4" value="12.999109497000106" />
+      <entry key="D1" value="12.999851576344302" />
+      <entry key="W1" value="12.999978796461697" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -110,28 +100,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8b32c96a-7c15-44e4-8f05-93ebd25feaeb" name="Changes" comment="" />
@@ -141,6 +131,7 @@
       <updated>1780247988863</updated>
       <workItem from="1780247993271" duration="75000" />
       <workItem from="1780248113502" duration="338000" />
+      <workItem from="1780248461004" duration="692000" />
     </task>
     <servers />
   </component>
